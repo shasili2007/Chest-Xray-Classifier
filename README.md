@@ -17,6 +17,17 @@ Results:               precision    recall  f1-score   support
             weighted avg       0.14      0.38      0.20       624
 
 
+Update - the bug turned about to be a data input issue, where the training data wasn't getting the data it should've been getting due to me inputting the wrong path. Here is the updates results from the classification report:
 
+Results:              precision    recall  f1-score   support
 
+      normal          0.93      0.59      0.73       234
+   pneumonia          0.80      0.97      0.88       390
+
+    accuracy                              0.83       624
+   macro avg          0.87      0.78      0.80       624
+weighted avg          0.85      0.83      0.82       624
+
+From these scores, we can see that the normal class has a recall score of 59% whereas the pneumonia class has a score of 97%, indicating the dataset is imbalanced.
+ 
 How to run -> Open pneumoniaV2.ipynb as a kaggle notebook, uploading from github, then attach corresponding dataset and run all cells.
