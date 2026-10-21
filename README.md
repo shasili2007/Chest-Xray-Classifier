@@ -41,6 +41,6 @@ Results:               precision    recall  f1-score   support
  
 From this, We can observe that these results are actually very similar to the results of the classification report with no weights included, meaning that this did not solve the problem and the data being imbalanced is not the problem.
 
-One thing it 
+One thing the recall problem could be is me freezing the resnet layers. Me fr
 
 How to run -> Open pneumoniaV2.ipynb as a kaggle notebook, uploading from github, then attach corresponding dataset and run all cells.
