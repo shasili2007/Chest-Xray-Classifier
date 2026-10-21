@@ -28,6 +28,17 @@ Results:              precision    recall  f1-score   support
    macro avg          0.87      0.78      0.80       624
 weighted avg          0.85      0.83      0.82       624
 
-From these scores, we can see that the normal class has a recall score of 59% whereas the pneumonia class has a score of 97%, indicating the dataset is imbalanced.
+From these scores, we can see that the normal class has a recall score of 59% whereas the pneumonia class has a score of 97%, indicating the dataset is imbalanced. To fix this, I am going to calculate the imbalance and weights for the 2 classes, where I will pass those weights into the cross entropy function to penalize the corresponding loss accordingly, rather than treating those two losses the same. Here are the results after including weights:
+
+Results:               precision    recall  f1-score   support
+
+          normal       0.94      0.58      0.72       234
+       pneumonia       0.80      0.98      0.88       390
+
+        accuracy                           0.83       624
+       macro avg       0.87      0.78      0.80       624
+    weighted avg       0.85      0.83      0.82       62
  
+From this, We can observe that these results are actually very similar to the results of the classification report with no weights included, meaning that this did not solve the problem and there is a different problem at hand.
+
 How to run -> Open pneumoniaV2.ipynb as a kaggle notebook, uploading from github, then attach corresponding dataset and run all cells.
