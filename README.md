@@ -2,6 +2,7 @@
 NN resnet which detects whether or not someone has pneumonia from an Xray of their chest.
 
 ## Status - Work in progress, currently fixing errors which i suspect is related to data leakage (as the average loss from training is extremely low) and the classification report, as only one classes is being predicted.
+-Update - now fixing recall problem with the normal class.
 
 Dataset -> Chest X-Ray Images (Pneumonia), link on line below
 https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
